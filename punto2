@@ -1,0 +1,37 @@
+/**************************
+*Fecha: 15 Agosto 2022
+*Autor: Sebastian Ruiz
+*Materia: Parallel and Distributed Computing
+*Tema: TALLER 1
+*Topico: convertidor de dias en años
+***************************/
+#include <stdio.h> 
+#include <math.h> 
+#include <stdlib.h>
+
+
+float anios;
+float dias;
+
+void calculo()
+{
+
+	printf("========================================\n");
+	printf("=             Bienvenido               =\n");					
+	printf("=         Convertidor de días          =\n");
+	printf("========================================\n");
+	
+	printf("Ingrese la cantidad de dias a transformar en años: \n");
+	
+	scanf("%f", &(dias));
+	
+	anios = dias / 365.0;
+	printf("El numero de años que representan la cantidad de dias ingresados son: %f \n",anios);
+
+}
+
+int main()
+{
+	calculo();
+	return 0;
+}
