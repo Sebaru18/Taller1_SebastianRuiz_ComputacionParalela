@@ -1,0 +1,64 @@
+/*************************************************
+*Fecha: 15 Agosto 2022
+*Autor: Sebastian Ruiz
+*Materia: Parallel and Distributed Computing
+*Tema: TALLER 1
+*Topico: Aplicacion para el calculo del producto
+*Entre dos enteros
+*************************************************/
+
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int i1 = 0;
+int i2 = 0;
+
+
+void bienvenida(){
+
+	printf("========================================\n");
+	printf("=             Bienvenido               =\n");					
+	printf("=      producto  de  dos  enteros      =\n");
+	printf("========================================\n");
+
+
+
+}
+
+
+void operacion(){
+
+	int res = 0;
+
+	printf("Introduzca el primer entero \n");
+	
+	scanf("%d", &(i1));
+	
+	printf("El primer entero es: %d \n", i1);
+
+	printf("Introduzca el segundo entero \n");
+	
+	scanf("%d", &(i2));
+	
+	printf("El segundo entero es: %d \n", i2);
+	
+	
+
+	
+	res = i1 * i2;
+	
+	printf("El resultado del producto de los dos entereos es de %d \n",res); 
+
+
+}
+
+int main(int argc, char *argv[]){
+
+	bienvenida();
+	operacion();
+		
+
+	return 0;
+}
